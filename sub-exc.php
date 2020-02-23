@@ -4,6 +4,9 @@ require "conn.php";
 if(isset($_POST["sub-btn"])){
 
     $validator = bin2hex(random_bytes(32)); // validator in hexidecimal digits
+    //Important! The variable $url must be change with the directory of your server where the file is uploaded.
+    //If the variable $url = "https://geronimo.okol.org/~vasivan/php/Liana/index.php?validator=$validator#sub-form"; is not changed, then the validation link will navigate the user to my server
+    //Only this part of the variable mus be changed https://geronimo.okol.org/~vasivan/php/Liana/    , the rest of the link is the validator and navigation to the sucscribe form
     $url = "https://geronimo.okol.org/~vasivan/php/Liana/index.php?validator=$validator#sub-form"; // This is the URL validator that the user will recieve on his email and he have to click it
     $email = $_POST["email"];
 
