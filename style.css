@@ -1,0 +1,304 @@
+html{
+    font-family: Calibri, Candara, Cambria;
+    color: #373a3c;
+}
+
+.bg-liana{
+    background-color: rgb(111, 177, 77);
+}
+
+.btn-liana{
+    background-color: rgb(111, 177, 77);
+    border-color: rgb(111, 177, 77);
+}
+
+/*PARALLAX*/
+#parallax-image{
+    background: rgba(0, 0, 0, 0.5) url(img/background-img.jpg);
+    background-blend-mode: darken;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+}
+
+#parallax-text{
+    font-family: Candara, Calibri, Cambria;
+    font-size: 50px;
+    color: white;
+    font-weight: lighter;
+}
+
+/*COMPANY/PRODUCTS/CONTACT US*/
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.img-filter{
+    filter: brightness(50%);
+    border-radius: 5px;
+}
+
+/*JS ANIMATION*/
+.material-icons{
+    color: rgb(111, 177, 77);
+    font-size: 80px;
+    float: left;
+}
+
+.anime-num{
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.anime-text{
+    font-weight: 600;
+}
+
+#anime-width{
+    width: 30%;
+}
+
+
+/*RSS FEED*/
+#rss-fluid{
+    overflow: auto;
+    padding-bottom: 40px;
+}
+
+#rss-container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h-ttl{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.rss-list{
+    display:inline-block;
+    width:100%;
+    float: left;
+    background-color:white;
+    margin:15px;
+    padding:20px;
+    padding-bottom: 5px;
+    height: 100%;
+    min-height:150px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid rgb(219, 219, 219);
+    margin-left: -18px;
+}
+
+.rss-list a{
+    color: rgb(55, 58, 60);
+}
+
+.rss-list a:hover{
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+}
+
+.rss-list:hover{
+    border: 1px solid rgb(111, 177, 77);
+}
+
+.rss-list h5{
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(107, 107, 107);
+}
+
+/*References*/
+#ref-fluid{
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.ref-card-body{
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+/*Subscribe*/
+
+#sub-form{
+    display: block;
+}
+
+/*Footer*/
+.bg-black{
+    background-color: rgb(0, 0, 0);
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+    border-radius: 50%;
+    color:white !important;
+    background-color: rgb(111, 177, 77);
+  }
+
+  .fa-facebook:hover {
+    background: #3B5998;
+  }
+
+  .fa-twitter:hover {
+    background: #55ACEE;
+  }
+
+  .fa-linkedin:hover {
+    background: #007bb5;
+  }
+
+#btn-cnt{
+    vertical-align: bottom; 
+    margin-bottom: -30px;
+    margin-left: 35px;
+}
+
+.s-bold{
+    font-weight: 500;
+}
+
+.text-white-custom{
+    color: rgb(255, 255, 255)!important;
+}
+
+.text-white-custom:hover{
+    color: rgb(111, 177, 77)!important;
+}
+
+
+@media only screen and (max-width: 377px) {
+    /*Footer*/
+    #btn-cnt{
+        margin-bottom: 0px;
+    }
+        
+    }
+
+@media only screen and (min-width: 575px) {
+    /*Footer*/
+    .fa {
+        margin: 5px 5px -22px 5px;
+      }
+      #anime-width{
+        width: 20%;
+    }
+    
+        
+    }
+
+
+/*Tablet Screen*/
+@media only screen and (min-width: 768px) {
+/*References*/
+.ref-card-body{
+    min-height: 300px;
+}
+
+#anime-width{
+    width: 100%;
+}
+
+.anime-num{
+    font-size: 40px;
+}
+
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+/*Computer Screen*/
+@media only screen and (min-width: 1020px) { /*Original 992px*/
+    /*PARALLAX*/
+    #parallax-image{
+        background-position: top;
+    }
+
+    /*RSS Feed*/
+    #rss-container{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rss-list{
+        width:30%;
+        min-height:200px;
+        margin:15px;
+    }
+
+    #sub-input{
+        min-width: 400px;
+    }
+
+    /*References*/
+    .ref-card-body{
+    min-height: 200px;
+    }
+
+    .anime-num{
+        font-size: 60px;
+    }
+
+}
+
+    
+    
+@media (min-width: 1230px) {
+    /*RSS Feed*/
+    .rss-list{
+        width:340px;
+        min-height:200px;
+    }
+
+    /*References*/
+    .ref-card-body{
+        min-height: 180px;
+    }
+}
+@media (min-width: 1280px) { /*Original 1200px */
+    #rss-container {
+      width: 1250px; /*Original 1170px */
+    }
+
+    .rss-list{
+        width:350px;
+        min-height:180px;
+    }
+
+  }
+
+  @media (min-width: 1800px) {
+      /*PARALLAX*/
+    #parallax-image{
+        background: rgba(0, 0, 0, 0.5) url(img/parallax.jpg);
+        background-blend-mode: darken;
+        height: 700px;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+        background-attachment: fixed;
+        background-position: top;
+    }
+
+  }
